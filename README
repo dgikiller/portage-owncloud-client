@@ -4,3 +4,31 @@ Portage-Owncloud-Client
 This is an Overlay to provide the OwnCloud Sync Client for Gentoo.
 
 
+Example usage:
+
+ cd /usr/local/
+ mkdir portage
+ cd portage
+ git clone git://github.com/Weuxel/portage-owncloud-client.git
+
+Now add the following line to /etc/make.conf
+ PORTDIR_OVERLAY="/usr/local/portage/portage-owncloud-client"
+
+
+Installation:
+
+Unmask the packages
+ net-misc/csync
+ net-misc/mirall
+
+and install net-misc/mirall
+ emerge mirall
+
+net-misc/csync should be pulled in amongst some other dependencies.
+
+Start the client by executing the command "owncloud".
+
+These ebuilds are freshly created and presumably not very mature yet.
+Please report problems to devel at smash-net.org
+
+
