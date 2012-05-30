@@ -20,6 +20,6 @@ DEPEND=">=dev-db/sqlite-3.4:3
 RDEPEND="${DEPEND}"
 
 src_configure() {
-	mycmakeargs=( -DCMAKE_MODULE_PATH=/usr/$(get_libdir)/csync-0/csync_owncloud.so )
+	mycmakeargs=( -DCMAKE_INSTALL_LIBDIR=/usr/$(get_libdir) )
 	cmake-utils_src_configure
 }
