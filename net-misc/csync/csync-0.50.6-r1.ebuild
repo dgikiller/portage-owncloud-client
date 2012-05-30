@@ -16,10 +16,15 @@ IUSE=""
 
 DEPEND=">=dev-db/sqlite-3.4:3
 	dev-libs/iniparser
-	net-libs/neon"
+	net-libs/neon
+	app-doc/doxygen
+	dev-libs/check"
 RDEPEND="${DEPEND}"
 
 src_configure() {
-	mycmakeargs=( -DCMAKE_INSTALL_LIBDIR=/usr/$(get_libdir) )
+	mycmakeargs=( 
+		-DSYSCONF_INSTALL_DIR=/etc
+		-DLIB_INSTALL_DIR=/usr/lib
+		)
 	cmake-utils_src_configure
 }
