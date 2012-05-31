@@ -21,12 +21,15 @@ Unmask the packages
  net-misc/csync
  net-misc/mirall
 
+Unmask dependencies if necessary
+ dev-libs/log4c
+
 and install net-misc/mirall
  emerge mirall
 
 net-misc/csync should be pulled in amongst some other dependencies.
 
-Start the client by executing the command "owncloud".
+Start the client by executing the command "owncloud" or ownCloud in your applications menu.
 
 These ebuilds are freshly created and presumably not very mature yet.
 Please report problems to devel at smash-net.org
