@@ -5,7 +5,7 @@
 EAPI=4
 inherit eutils cmake-utils
 
-DESCRIPTION="OwnCloud only build of CSync, a lightweight utility to synchronize files between two directories on a system or between multiple systems."
+DESCRIPTION="OwnCloud only build of CSync, a lightweight utility to synchronize files between multiple systems."
 HOMEPAGE="http://owncloud.org/sync-clients/"
 SRC_URI="http://download.owncloud.com/download/${P}.tar.bz2"
 
@@ -25,7 +25,7 @@ DEPEND=">=dev-db/sqlite-3.4:3
 RDEPEND="${DEPEND}"
 
 src_configure() {
-	mycmakeargs=( 
+	mycmakeargs=(
 		-DSYSCONF_INSTALL_DIR=/etc
 		)
 	cmake-utils_src_configure

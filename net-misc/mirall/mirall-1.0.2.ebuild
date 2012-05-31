@@ -5,7 +5,7 @@
 EAPI=4
 inherit eutils cmake-utils
 
-DESCRIPTION="OwnCloud build of Mirall. One ore more specified directories on the local machine are going to be synced to your OwnCloud."
+DESCRIPTION="OwnCloud build of Mirall. Directories on the local machine are going to be synced to OwnCloud."
 HOMEPAGE="http://owncloud.com/"
 SRC_URI="http://download.owncloud.com/download/${P}.tar.bz2"
 
