@@ -4,6 +4,25 @@ Portage-Owncloud-Client
 This is an Overlay to provide the OwnCloud Sync Client for Gentoo.
 
 
+Using Layman:
+
+Add 
+ https://raw.github.com/Weuxel/portage-owncloud-client/master/metadata/owncloud-client.xml
+to the /etc/layman/layman.cfg overlays section.
+
+Example:
+ overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml
+             https://raw.github.com/Weuxel/portage-owncloud-client/master/metadata/owncloud-client.xml
+
+Now add the repository
+ layman -a owncloud-client
+For future update of the repository use 
+ layman -S to sync all repositories or
+ layman -s owncloud-client to sync the owncloud-client repository
+
+
+Using local repository:
+
 Example usage:
 
  cd /usr/local/
@@ -31,7 +50,6 @@ net-misc/csync should be pulled in amongst some other dependencies.
 
 Start the client by executing the command "owncloud" or ownCloud in your applications menu.
 
-These ebuilds are freshly created and presumably not very mature yet.
 Please report problems to devel at smash-net.org
 
 
