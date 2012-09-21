@@ -7,17 +7,20 @@ inherit eutils cmake-utils
 
 DESCRIPTION="OwnCloud build of Mirall. Directories on the local machine are going to be synced to OwnCloud."
 HOMEPAGE="http://owncloud.com/"
-SRC_URI="http://download.owncloud.com/download/${P}.tar.bz2"
+#SRC_URI="http://download.owncloud.com/download/${P}.tar.bz2"
+SRC_URI="http://download.owncloud.com/download/beta/${PN}-1.1.0beta2.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=">=net-misc/csync-0.50.7
+DEPEND=">=net-misc/csync-0.50.8
 	>=x11-libs/qt-gui-4.7
 	>=x11-libs/qt-test-4.7"
 RDEPEND="${DEPEND}"
+
+S="${WORKDIR}/${PN}-1.1.0beta2"
 
 src_install() {
 	cmake-utils_src_install
