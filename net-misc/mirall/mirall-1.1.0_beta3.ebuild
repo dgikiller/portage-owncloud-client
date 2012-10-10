@@ -25,6 +25,7 @@ S="${WORKDIR}/${PN}-1.1.0beta3"
 src_configure() {
 	mycmakeargs=(
 		-DCMAKE_BUILD_TYPE="Debug"
+		-DCSYNC_INCLUDE_PATH=/usr/include/ocsync
 		)
 	cmake-utils_src_configure
 }
