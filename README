@@ -37,7 +37,7 @@ Now add the following line to /etc/make.conf
 Installation:
 
 Unmask the packages
- net-misc/csync
+ net-misc/ocsync
  net-misc/mirall
 
 Unmask dependencies if necessary
