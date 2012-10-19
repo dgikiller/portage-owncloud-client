@@ -15,6 +15,7 @@ Example:
              https://raw.github.com/Weuxel/portage-owncloud-client/master/metadata/owncloud-client.xml
 
 Now add the repository
+ layman -f
  layman -a owncloud-client
 For future update of the repository use 
  layman -S to sync all repositories or
