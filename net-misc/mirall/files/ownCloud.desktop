@@ -1,9 +1,8 @@
 [Desktop Entry]
 Version=1.0
-Encoding=UTF-8
 Exec=owncloud
 Terminal=false
 Type=Application
-Icon=owncloud.png
-Categories=Application;Network;
+Icon=owncloud
+Categories=Network;
 Name=ownCloud
