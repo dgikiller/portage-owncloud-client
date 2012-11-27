@@ -14,15 +14,14 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=">=dev-db/sqlite-3.4:3
+DEPEND="app-doc/doxygen"
+RDEPEND=">=dev-db/sqlite-3.4:3
 	>=dev-libs/iniparser-2.10
 	net-libs/neon
-	app-doc/doxygen
 	>=dev-libs/check-0.9.5
 	virtual/latex-base
 	app-text/dvipsk
 	>=net-libs/libssh-0.5"
-RDEPEND="${DEPEND}"
 
 src_configure() {
 	mycmakeargs=(
