@@ -42,7 +42,6 @@ Unmask the packages
  net-misc/mirall
 
 Unmask dependencies if necessary
- dev-libs/log4c
 
 and install net-misc/mirall
  emerge mirall
