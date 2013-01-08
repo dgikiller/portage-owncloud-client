@@ -6,7 +6,16 @@ This is an Overlay to provide the OwnCloud Sync Client for Gentoo.
 
 Using Layman:
 
-Add 
+owncloud-client is in laymans remote list, so just add the repository
+ layman -f
+ layman -a owncloud-client
+For future update of the repository use
+ layman -S to sync all repositories or
+ layman -s owncloud-client to sync the owncloud-client repository
+
+Optional:
+A layman compatible owncloud-client.xml is available under the following URL. You won't normally need
+this, but if you like to do things manually add 
  https://raw.github.com/Weuxel/portage-owncloud-client/master/metadata/owncloud-client.xml
 to the /etc/layman/layman.cfg overlays section.
 
@@ -47,7 +56,7 @@ Unmask dependencies if necessary
 and install net-misc/mirall
  emerge mirall
 
-net-misc/csync should be pulled in amongst some other dependencies.
+net-misc/ocsync should be pulled in amongst some other dependencies.
 
 Start the client by executing the command "owncloud" or ownCloud in your applications menu.
 
