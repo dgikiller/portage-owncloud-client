@@ -14,8 +14,7 @@ For future update of the repository use
  layman -s owncloud-client to sync the owncloud-client repository
 
 Optional:
-A layman compatible owncloud-client.xml is available under the following URL. You won't normally need
-this, but if you like to do things manually add 
+A layman compatible owncloud-client.xml is available under the following URL. You won't normally need this, but if you like to do things manually add 
  https://raw.github.com/Weuxel/portage-owncloud-client/master/metadata/owncloud-client.xml
 to the /etc/layman/layman.cfg overlays section.
 
