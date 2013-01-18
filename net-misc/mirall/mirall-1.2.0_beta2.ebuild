@@ -16,7 +16,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND=">=net-misc/ocsync-0.70.1
-	>=x11-misc/qtkeychain-20121222
+	>=x11-misc/qtkeychain-0.1.0
 	>=x11-libs/qt-gui-4.7
 	>=x11-libs/qt-test-4.7"
 RDEPEND="${DEPEND}"
