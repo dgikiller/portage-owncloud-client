@@ -18,7 +18,7 @@ IUSE=""
 DEPEND="virtual/latex-base
 	dev-texlive/texlive-latexextra"
 RDEPEND=">=net-misc/ocsync-0.70.4
-    >=x11-misc/qtkeychain-0.1.0
+	>=x11-misc/qtkeychain-0.1.0
 	>=dev-qt/qtcore-4.7
 	>=dev-qt/qtgui-4.7
 	>=dev-qt/qttest-4.7"
