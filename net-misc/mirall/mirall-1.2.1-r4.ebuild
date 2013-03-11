@@ -18,6 +18,7 @@ IUSE="doc"
 DEPEND="doc? ( virtual/latex-base dev-texlive/texlive-latexextra dev-python/sphinx )"
 RDEPEND=">=net-misc/ocsync-0.70.4
 	>=x11-misc/qtkeychain-0.1.0
+	sys-fs/inotify-tools
 	>=dev-qt/qtcore-4.7
 	>=dev-qt/qtgui-4.7
 	>=dev-qt/qttest-4.7"
@@ -34,9 +35,8 @@ src_configure() {
 src_compile()
 {
 	cmake-utils_src_compile
-	if ! use doc; then
-		emake doc
-	fi
+	cd ${WORKDIR}/${P}_build
+	emake doc
 }
 
 src_install() {
