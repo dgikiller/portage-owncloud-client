@@ -7,8 +7,8 @@ inherit eutils cmake-utils
 
 DESCRIPTION="OwnCloud build of Mirall. Directories on the local machine are going to be synced to OwnCloud."
 HOMEPAGE="http://owncloud.org/"
-SRC_URI="http://download.owncloud.com/download/testing/${PN}-1.3.0beta3.tar.bz2"
-S="${WORKDIR}/${PN}-1.3.0beta3"
+SRC_URI="http://download.owncloud.com/download/testing/${PN}-1.3.0beta4.tar.bz2"
+S="${WORKDIR}/${PN}-1.3.0beta4"
 
 LICENSE="GPL-2"
 SLOT="0"
