@@ -19,11 +19,11 @@ DEPEND="doc? ( virtual/latex-base dev-texlive/texlive-latexextra dev-python/sphi
 RDEPEND=">=net-misc/ocsync-0.90.2
 		>=x11-misc/qtkeychain-0.1.0
 		sys-fs/inotify-tools
-		>=dev-qt/qtcore-4.7
-		>=dev-qt/qtgui-4.7
-		>=dev-qt/qttest-4.7
-		>=dev-qt/qtdbus-4.7
-		>=dev-qt/qtwebkit-4.7"
+		>=dev-qt/qtcore-4.7:4
+		>=dev-qt/qtgui-4.7:4
+		>=dev-qt/qttest-4.7:4
+		>=dev-qt/qtdbus-4.7:4
+		>=dev-qt/qtwebkit-4.7:4"
 
 src_configure() {
 	mycmakeargs=(
