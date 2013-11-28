@@ -28,7 +28,6 @@ src_configure() {
 		-DLOG_TO_CALLBACK=ON
 		-DWITH_LOG4C=OFF
 		#-DCMAKE_BUILD_TYPE="Debug"
-		$(cmake-utils_use_with webdav Neon)
 		$(cmake-utils_use_with sftp LibSSH)
 		$(cmake-utils_use_with samba Libsmbclient)
 		$(cmake-utils_use test UNIT_TESTING)
