@@ -17,7 +17,7 @@ IUSE="doc"
 
 DEPEND="doc? ( virtual/latex-base dev-texlive/texlive-latexextra dev-python/sphinx )"
 RDEPEND=">=net-misc/ocsync-0.91.1
-		>=x11-misc/qtkeychain-0.1.0
+		>=dev-libs/qtkeychain-0.1.0
 		sys-fs/inotify-tools
 		>=dev-qt/qtcore-4.7:4
 		>=dev-qt/qtgui-4.7:4
