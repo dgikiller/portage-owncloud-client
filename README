@@ -47,15 +47,12 @@ Installation:
 
 Unmask the packages
  x11-misc/qtkeychain
- net-misc/ocsync
  net-misc/mirall
 
 Unmask dependencies if necessary
 
 and install net-misc/mirall
  emerge mirall
-
-net-misc/ocsync should be pulled in amongst some other dependencies.
 
 Start the client by executing the command "owncloud" or ownCloud in your applications menu.
 
