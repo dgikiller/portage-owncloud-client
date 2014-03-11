@@ -8,7 +8,7 @@ inherit eutils cmake-utils
 DESCRIPTION="Platform-independent Qt API for storing passwords securely."
 HOMEPAGE="https://github.com/frankosterfeld/qtkeychain"
 SRC_URI="http://smash-net.org/owncloud-client/${P}_20140311.tar.gz"
-S="${WORKDIR}/qtkeychain-masteqtkeychain-master"
+S="${WORKDIR}/qtkeychain-master"
 
 LICENSE="BSD"
 SLOT="0"
