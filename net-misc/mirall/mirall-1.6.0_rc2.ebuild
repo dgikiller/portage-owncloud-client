@@ -34,6 +34,8 @@ RDEPEND="!net-misc/ocsync
 			dev-qt/qtdbus:5
 			dev-qt/qtwebkit:5
 			dev-qt/qtprintsupport:5
+			dev-qt/qtxml:5
+			dev-qt/linguist-tools:5
 		)
 		sys-fs/inotify-tools
 		dev-db/sqlite:3
