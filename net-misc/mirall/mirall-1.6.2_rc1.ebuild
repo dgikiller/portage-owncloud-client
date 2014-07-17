@@ -24,6 +24,7 @@ RDEPEND="!net-misc/ocsync
 			dev-qt/qtgui:4
 			dev-qt/qttest:4
 			dev-qt/qtdbus:4
+			dev-qt/qtsql:4
 			dev-qt/qtwebkit:4
 		)
 		qt5? ( 
@@ -36,6 +37,7 @@ RDEPEND="!net-misc/ocsync
 			dev-qt/qtprintsupport:5
 			dev-qt/qtxml:5
 			dev-qt/linguist-tools:5
+			dev-qt/qtsql:5
 		)
 		sys-fs/inotify-tools
 		dev-db/sqlite:3
